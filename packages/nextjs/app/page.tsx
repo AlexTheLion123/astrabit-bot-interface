@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           </h1>
           <p>
             UI system showcasing the top trading bots for Astrabit, allowing users to select bots to trade the BioFi
-            token within the ecosystem
+            token within the ecosystem.
           </p>
           <div className="flex items-start space-x-2 flex-col sm:flex-row">
             <RainbowKitCustomConnectButton />
@@ -24,7 +24,14 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12"></div>
+        <div className="flex-grow bg-base-300 w-full mt-4 px-8 py-12">
+          <div className="mb-4">Available bots:</div>
+          <ul className="gap-4 flex flex-col">
+            <li className="border border-white flex justify-center py-4 px-6">Bot 1</li>
+            <li className="border border-white flex justify-center py-4 px-6">Bot 2</li>
+            <li className="border border-white flex justify-center py-4 px-6">Bot 3</li>
+          </ul>
+        </div>
       </div>
     </>
   );
