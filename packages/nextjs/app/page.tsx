@@ -61,8 +61,8 @@ const Home: NextPage<any> = () => {
           <div className="mb-4">Available bots:</div>
           <ul className="gap-4 flex flex-col">
             {bots.map((bot, index) => (
-              <li key={index} className="border border-white p-4">
-                <h2 className="text-xl font-semibold">{bot.name}</h2>
+              <li key={index} className="border border-white rounded-md p-4 text-sm">
+                <h2 className="text-3xl font-semibold">{bot.name}</h2>
                 <p>Strategy: {bot.strategy}</p>
                 <p>ROI: {bot.roi}%</p>
                 <p>Win Rate: {bot.winRate}%</p>
@@ -70,13 +70,13 @@ const Home: NextPage<any> = () => {
                 <p className="mb-4">{bot.description}</p>
 
                 {/* Visual Representation */}
-                <div className="flex gap-4">
+                <div className="flex flex-col mb-4 gap-4">
                   <div>
-                    <span className="font-bold">ROI:</span>
+                    <span className="font-bold">ROI: {bot.roi} %</span>
                     <ProgressBar percentage={bot.roi} />
                   </div>
                   <div>
-                    <span className="font-bold">Win Rate:</span>
+                    <span className="font-bold">Win Rate: {bot.winRate} %</span>
                     <ProgressBar percentage={bot.winRate} />
                   </div>
                 </div>
