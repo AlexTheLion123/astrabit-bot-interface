@@ -18,9 +18,11 @@ const Home: NextPage<any> = () => {
             UI system showcasing the top trading bots for Astrabit, allowing users to select bots to trade the BioFi
             token within the ecosystem.
           </p>
-          <div className="flex items-start space-x-2 flex-col sm:flex-row">
+          <div className="flex items-center gap-1 flex-col sm:flex-row">
             <RainbowKitCustomConnectButton />
-            <Address address={connectedAddress} />
+            <div className="w-full flex flex-col sm:flex-row items-center">
+              <Address address={connectedAddress} />
+            </div>
           </div>
         </div>
 
