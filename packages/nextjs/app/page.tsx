@@ -46,7 +46,7 @@ const Home: NextPage<any> = () => {
           <h1 className="text-center">
             <Image
               alt="AA Logo"
-              className="cursor-pointer inline-block text-center w-1/2 mb-4"
+              className="cursor-pointer inline-block text-center w-1/2 mb-4 max-w-52"
               width={50}
               height={50}
               src="/logo.svg"
@@ -65,7 +65,7 @@ const Home: NextPage<any> = () => {
           </div>
         </div>
 
-        <div className="flex-grow bg-base-300 w-full mt-4 px-8 py-12">
+        <div className="flex-grow max-w-screen-lg bg-base-300 w-full mt-4 px-8 py-12">
           <div className="mb-4">Available bots:</div>
           <ul className="gap-4 flex flex-col">
             {bots.map((bot, index) => (
