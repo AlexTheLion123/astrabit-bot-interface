@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { Address, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 
-const Home: NextPage = () => {
+const Home: NextPage<any> = () => {
   const { address: connectedAddress } = useAccount();
 
   return (
