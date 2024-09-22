@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ProgressBar from "../components/ProgressBar";
 import { NextPage } from "next";
 import { useAccount } from "wagmi";
@@ -40,10 +41,17 @@ const Home: NextPage<any> = () => {
 
   return (
     <>
-      <div className="flex items-center flex-col flex-grow pt-10">
-        <div className="px-5 w-full">
-          <h1 className="text-left">
-            <span className="block text-4xl font-bold">Astra Analytics</span>
+      <div className="flex items-center flex-col flex-grow pt-8">
+        <div className="px-4 w-full">
+          <h1 className="text-center">
+            <Image
+              alt="AA Logo"
+              className="cursor-pointer inline-block text-center w-1/2 mb-4"
+              width={50}
+              height={50}
+              src="/logo.svg"
+            />
+            <span className="block text-4xl w-full text-left font-bold">Astra Analytics</span>
           </h1>
           <p>
             UI system showcasing the top trading bots for Astrabit, allowing users to select bots to trade the BioFi
